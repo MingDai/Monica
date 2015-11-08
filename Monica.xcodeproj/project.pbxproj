@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08F2A2AB1BEE66C400FB3CFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A2AA1BEE66C400FB3CFE /* AppDelegate.m */; };
+		08F2A2AE1BEE66C400FB3CFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A2AD1BEE66C400FB3CFE /* ViewController.m */; };
+		08F2A2B11BEE66C400FB3CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2AF1BEE66C400FB3CFE /* Main.storyboard */; };
+		08F2A2B31BEE66C400FB3CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2B21BEE66C400FB3CFE /* Assets.xcassets */; };
+		08F2A2B61BEE66C400FB3CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2B41BEE66C400FB3CFE /* LaunchScreen.storyboard */; };
+		08F2A2C11BEE66C400FB3CFE /* MonicaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A2C01BEE66C400FB3CFE /* MonicaTests.m */; };
+		08F2A2CC1BEE66C400FB3CFE /* MonicaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A2CB1BEE66C400FB3CFE /* MonicaUITests.m */; };
+		08F2A2ED1BEE8E1000FB3CFE /* nmsp_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E41BEE8E1000FB3CFE /* nmsp_core.framework */; };
+		08F2A2EE1BEE8E1000FB3CFE /* nmsp_oem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E51BEE8E1000FB3CFE /* nmsp_oem.framework */; };
+		08F2A2EF1BEE8E1000FB3CFE /* nmsp_resource_common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E61BEE8E1000FB3CFE /* nmsp_resource_common.framework */; };
+		08F2A2F01BEE8E1000FB3CFE /* nmsp_resource_nmas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E71BEE8E1000FB3CFE /* nmsp_resource_nmas.framework */; };
+		08F2A2F11BEE8E1000FB3CFE /* nmt_audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E81BEE8E1000FB3CFE /* nmt_audio.framework */; };
+		08F2A2F21BEE8E1000FB3CFE /* nmt_cloudservices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2E91BEE8E1000FB3CFE /* nmt_cloudservices.framework */; };
+		08F2A2F31BEE8E1000FB3CFE /* nmt_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2EA1BEE8E1000FB3CFE /* nmt_core.framework */; };
+		08F2A2F41BEE8E1000FB3CFE /* nmt_recognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2EB1BEE8E1000FB3CFE /* nmt_recognition.framework */; };
+		08F2A2F51BEE8E1000FB3CFE /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2EC1BEE8E1000FB3CFE /* SpeechKit.framework */; };
+		08F2A2F81BEE8E7200FB3CFE /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A2F71BEE8E7200FB3CFE /* SKSConfiguration.mm */; };
+		08F2A2FD1BEE98D900FB3CFE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2FC1BEE98D900FB3CFE /* AudioToolbox.framework */; };
+		08F2A2FF1BEE994700FB3CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A2FE1BEE994700FB3CFE /* Foundation.framework */; };
+		08F2A3011BEE9C9000FB3CFE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A3001BEE9C9000FB3CFE /* AVFoundation.framework */; };
+		08F2A3031BEEA03200FB3CFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A3021BEEA03200FB3CFE /* main.m */; };
+		08F2A3051BEEB57700FB3CFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2A3041BEEB57700FB3CFE /* UIKit.framework */; };
+		08F2A3061BEEBD4000FB3CFE /* sk_error.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2F91BEE915B00FB3CFE /* sk_error.pcm */; };
+		08F2A3071BEEBD4000FB3CFE /* sk_start.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2FA1BEE915B00FB3CFE /* sk_start.pcm */; };
+		08F2A3081BEEBD4000FB3CFE /* sk_stop.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 08F2A2FB1BEE915B00FB3CFE /* sk_stop.pcm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08F2A2BD1BEE66C400FB3CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F2A29B1BEE66C400FB3CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F2A2A21BEE66C400FB3CFE;
+			remoteInfo = Monica;
+		};
+		08F2A2C81BEE66C400FB3CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F2A29B1BEE66C400FB3CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F2A2A21BEE66C400FB3CFE;
+			remoteInfo = Monica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F2A2A31BEE66C400FB3CFE /* Monica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F2A2A91BEE66C400FB3CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08F2A2AA1BEE66C400FB3CFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08F2A2AC1BEE66C400FB3CFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08F2A2AD1BEE66C400FB3CFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08F2A2B01BEE66C400FB3CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08F2A2B21BEE66C400FB3CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08F2A2B51BEE66C400FB3CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08F2A2B71BEE66C400FB3CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F2A2BC1BEE66C400FB3CFE /* MonicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F2A2C01BEE66C400FB3CFE /* MonicaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonicaTests.m; sourceTree = "<group>"; };
+		08F2A2C21BEE66C400FB3CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F2A2C71BEE66C400FB3CFE /* MonicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F2A2CB1BEE66C400FB3CFE /* MonicaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonicaUITests.m; sourceTree = "<group>"; };
+		08F2A2CD1BEE66C400FB3CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F2A2DD1BEE6E4300FB3CFE /* earcon_cancel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_cancel.wav; sourceTree = "<group>"; };
+		08F2A2DE1BEE6E4300FB3CFE /* earcon_done_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_done_listening.wav; sourceTree = "<group>"; };
+		08F2A2DF1BEE6E4300FB3CFE /* earcon_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earcon_listening.wav; sourceTree = "<group>"; };
+		08F2A2E41BEE8E1000FB3CFE /* nmsp_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmsp_core.framework; sourceTree = "<group>"; };
+		08F2A2E51BEE8E1000FB3CFE /* nmsp_oem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmsp_oem.framework; sourceTree = "<group>"; };
+		08F2A2E61BEE8E1000FB3CFE /* nmsp_resource_common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmsp_resource_common.framework; sourceTree = "<group>"; };
+		08F2A2E71BEE8E1000FB3CFE /* nmsp_resource_nmas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmsp_resource_nmas.framework; sourceTree = "<group>"; };
+		08F2A2E81BEE8E1000FB3CFE /* nmt_audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmt_audio.framework; sourceTree = "<group>"; };
+		08F2A2E91BEE8E1000FB3CFE /* nmt_cloudservices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmt_cloudservices.framework; sourceTree = "<group>"; };
+		08F2A2EA1BEE8E1000FB3CFE /* nmt_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmt_core.framework; sourceTree = "<group>"; };
+		08F2A2EB1BEE8E1000FB3CFE /* nmt_recognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nmt_recognition.framework; sourceTree = "<group>"; };
+		08F2A2EC1BEE8E1000FB3CFE /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
+		08F2A2F61BEE8E7200FB3CFE /* SKSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
+		08F2A2F71BEE8E7200FB3CFE /* SKSConfiguration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKSConfiguration.mm; sourceTree = "<group>"; };
+		08F2A2F91BEE915B00FB3CFE /* sk_error.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_error.pcm; sourceTree = "<group>"; };
+		08F2A2FA1BEE915B00FB3CFE /* sk_start.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_start.pcm; sourceTree = "<group>"; };
+		08F2A2FB1BEE915B00FB3CFE /* sk_stop.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_stop.pcm; sourceTree = "<group>"; };
+		08F2A2FC1BEE98D900FB3CFE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08F2A2FE1BEE994700FB3CFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08F2A3001BEE9C9000FB3CFE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08F2A3021BEEA03200FB3CFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08F2A3041BEEB57700FB3CFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F2A2A01BEE66C400FB3CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2A3051BEEB57700FB3CFE /* UIKit.framework in Frameworks */,
+				08F2A3011BEE9C9000FB3CFE /* AVFoundation.framework in Frameworks */,
+				08F2A2FF1BEE994700FB3CFE /* Foundation.framework in Frameworks */,
+				08F2A2FD1BEE98D900FB3CFE /* AudioToolbox.framework in Frameworks */,
+				08F2A2F21BEE8E1000FB3CFE /* nmt_cloudservices.framework in Frameworks */,
+				08F2A2EE1BEE8E1000FB3CFE /* nmsp_oem.framework in Frameworks */,
+				08F2A2F31BEE8E1000FB3CFE /* nmt_core.framework in Frameworks */,
+				08F2A2F51BEE8E1000FB3CFE /* SpeechKit.framework in Frameworks */,
+				08F2A2EF1BEE8E1000FB3CFE /* nmsp_resource_common.framework in Frameworks */,
+				08F2A2F41BEE8E1000FB3CFE /* nmt_recognition.framework in Frameworks */,
+				08F2A2ED1BEE8E1000FB3CFE /* nmsp_core.framework in Frameworks */,
+				08F2A2F11BEE8E1000FB3CFE /* nmt_audio.framework in Frameworks */,
+				08F2A2F01BEE8E1000FB3CFE /* nmsp_resource_nmas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2B91BEE66C400FB3CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2C41BEE66C400FB3CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08F2A29A1BEE66C400FB3CFE = {
+			isa = PBXGroup;
+			children = (
+				08F2A2E31BEE8DB900FB3CFE /* Frameworks */,
+				08F2A2A51BEE66C400FB3CFE /* Monica */,
+				08F2A2BF1BEE66C400FB3CFE /* MonicaTests */,
+				08F2A2CA1BEE66C400FB3CFE /* MonicaUITests */,
+				08F2A2A41BEE66C400FB3CFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08F2A2A41BEE66C400FB3CFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A2A31BEE66C400FB3CFE /* Monica.app */,
+				08F2A2BC1BEE66C400FB3CFE /* MonicaTests.xctest */,
+				08F2A2C71BEE66C400FB3CFE /* MonicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08F2A2A51BEE66C400FB3CFE /* Monica */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A2F91BEE915B00FB3CFE /* sk_error.pcm */,
+				08F2A2FA1BEE915B00FB3CFE /* sk_start.pcm */,
+				08F2A2FB1BEE915B00FB3CFE /* sk_stop.pcm */,
+				08F2A2F61BEE8E7200FB3CFE /* SKSConfiguration.h */,
+				08F2A2F71BEE8E7200FB3CFE /* SKSConfiguration.mm */,
+				08F2A2A91BEE66C400FB3CFE /* AppDelegate.h */,
+				08F2A2AA1BEE66C400FB3CFE /* AppDelegate.m */,
+				08F2A2AC1BEE66C400FB3CFE /* ViewController.h */,
+				08F2A2AD1BEE66C400FB3CFE /* ViewController.m */,
+				08F2A2AF1BEE66C400FB3CFE /* Main.storyboard */,
+				08F2A2B21BEE66C400FB3CFE /* Assets.xcassets */,
+				08F2A2B41BEE66C400FB3CFE /* LaunchScreen.storyboard */,
+				08F2A2B71BEE66C400FB3CFE /* Info.plist */,
+				08F2A2A61BEE66C400FB3CFE /* Supporting Files */,
+			);
+			path = Monica;
+			sourceTree = "<group>";
+		};
+		08F2A2A61BEE66C400FB3CFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A3021BEEA03200FB3CFE /* main.m */,
+				08F2A2DD1BEE6E4300FB3CFE /* earcon_cancel.wav */,
+				08F2A2DE1BEE6E4300FB3CFE /* earcon_done_listening.wav */,
+				08F2A2DF1BEE6E4300FB3CFE /* earcon_listening.wav */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08F2A2BF1BEE66C400FB3CFE /* MonicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A2C01BEE66C400FB3CFE /* MonicaTests.m */,
+				08F2A2C21BEE66C400FB3CFE /* Info.plist */,
+			);
+			path = MonicaTests;
+			sourceTree = "<group>";
+		};
+		08F2A2CA1BEE66C400FB3CFE /* MonicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A2CB1BEE66C400FB3CFE /* MonicaUITests.m */,
+				08F2A2CD1BEE66C400FB3CFE /* Info.plist */,
+			);
+			path = MonicaUITests;
+			sourceTree = "<group>";
+		};
+		08F2A2E31BEE8DB900FB3CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F2A3041BEEB57700FB3CFE /* UIKit.framework */,
+				08F2A3001BEE9C9000FB3CFE /* AVFoundation.framework */,
+				08F2A2FE1BEE994700FB3CFE /* Foundation.framework */,
+				08F2A2FC1BEE98D900FB3CFE /* AudioToolbox.framework */,
+				08F2A2E41BEE8E1000FB3CFE /* nmsp_core.framework */,
+				08F2A2E51BEE8E1000FB3CFE /* nmsp_oem.framework */,
+				08F2A2E61BEE8E1000FB3CFE /* nmsp_resource_common.framework */,
+				08F2A2E71BEE8E1000FB3CFE /* nmsp_resource_nmas.framework */,
+				08F2A2E81BEE8E1000FB3CFE /* nmt_audio.framework */,
+				08F2A2E91BEE8E1000FB3CFE /* nmt_cloudservices.framework */,
+				08F2A2EA1BEE8E1000FB3CFE /* nmt_core.framework */,
+				08F2A2EB1BEE8E1000FB3CFE /* nmt_recognition.framework */,
+				08F2A2EC1BEE8E1000FB3CFE /* SpeechKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08F2A2A21BEE66C400FB3CFE /* Monica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F2A2D01BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "Monica" */;
+			buildPhases = (
+				08F2A29F1BEE66C400FB3CFE /* Sources */,
+				08F2A2A01BEE66C400FB3CFE /* Frameworks */,
+				08F2A2A11BEE66C400FB3CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Monica;
+			productName = Monica;
+			productReference = 08F2A2A31BEE66C400FB3CFE /* Monica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08F2A2BB1BEE66C400FB3CFE /* MonicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F2A2D31BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "MonicaTests" */;
+			buildPhases = (
+				08F2A2B81BEE66C400FB3CFE /* Sources */,
+				08F2A2B91BEE66C400FB3CFE /* Frameworks */,
+				08F2A2BA1BEE66C400FB3CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08F2A2BE1BEE66C400FB3CFE /* PBXTargetDependency */,
+			);
+			name = MonicaTests;
+			productName = MonicaTests;
+			productReference = 08F2A2BC1BEE66C400FB3CFE /* MonicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08F2A2C61BEE66C400FB3CFE /* MonicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F2A2D61BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "MonicaUITests" */;
+			buildPhases = (
+				08F2A2C31BEE66C400FB3CFE /* Sources */,
+				08F2A2C41BEE66C400FB3CFE /* Frameworks */,
+				08F2A2C51BEE66C400FB3CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08F2A2C91BEE66C400FB3CFE /* PBXTargetDependency */,
+			);
+			name = MonicaUITests;
+			productName = MonicaUITests;
+			productReference = 08F2A2C71BEE66C400FB3CFE /* MonicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08F2A29B1BEE66C400FB3CFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Ming Dai";
+				TargetAttributes = {
+					08F2A2A21BEE66C400FB3CFE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W9A4XKAZPH;
+					};
+					08F2A2BB1BEE66C400FB3CFE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W9A4XKAZPH;
+						TestTargetID = 08F2A2A21BEE66C400FB3CFE;
+					};
+					08F2A2C61BEE66C400FB3CFE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W9A4XKAZPH;
+						TestTargetID = 08F2A2A21BEE66C400FB3CFE;
+					};
+				};
+			};
+			buildConfigurationList = 08F2A29E1BEE66C400FB3CFE /* Build configuration list for PBXProject "Monica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08F2A29A1BEE66C400FB3CFE;
+			productRefGroup = 08F2A2A41BEE66C400FB3CFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08F2A2A21BEE66C400FB3CFE /* Monica */,
+				08F2A2BB1BEE66C400FB3CFE /* MonicaTests */,
+				08F2A2C61BEE66C400FB3CFE /* MonicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08F2A2A11BEE66C400FB3CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2A3061BEEBD4000FB3CFE /* sk_error.pcm in Resources */,
+				08F2A3071BEEBD4000FB3CFE /* sk_start.pcm in Resources */,
+				08F2A3081BEEBD4000FB3CFE /* sk_stop.pcm in Resources */,
+				08F2A2B61BEE66C400FB3CFE /* LaunchScreen.storyboard in Resources */,
+				08F2A2B31BEE66C400FB3CFE /* Assets.xcassets in Resources */,
+				08F2A2B11BEE66C400FB3CFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2BA1BEE66C400FB3CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2C51BEE66C400FB3CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F2A29F1BEE66C400FB3CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2A2F81BEE8E7200FB3CFE /* SKSConfiguration.mm in Sources */,
+				08F2A2AE1BEE66C400FB3CFE /* ViewController.m in Sources */,
+				08F2A3031BEEA03200FB3CFE /* main.m in Sources */,
+				08F2A2AB1BEE66C400FB3CFE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2B81BEE66C400FB3CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2A2C11BEE66C400FB3CFE /* MonicaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F2A2C31BEE66C400FB3CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2A2CC1BEE66C400FB3CFE /* MonicaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08F2A2BE1BEE66C400FB3CFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08F2A2A21BEE66C400FB3CFE /* Monica */;
+			targetProxy = 08F2A2BD1BEE66C400FB3CFE /* PBXContainerItemProxy */;
+		};
+		08F2A2C91BEE66C400FB3CFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08F2A2A21BEE66C400FB3CFE /* Monica */;
+			targetProxy = 08F2A2C81BEE66C400FB3CFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08F2A2AF1BEE66C400FB3CFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08F2A2B01BEE66C400FB3CFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08F2A2B41BEE66C400FB3CFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08F2A2B51BEE66C400FB3CFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08F2A2CE1BEE66C400FB3CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08F2A2CF1BEE66C400FB3CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08F2A2D11BEE66C400FB3CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DragonMobileSDK_1.4.21",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Monica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.Monica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		08F2A2D21BEE66C400FB3CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DragonMobileSDK_1.4.21",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Monica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.Monica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		08F2A2D41BEE66C400FB3CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MonicaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.MonicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monica.app/Monica";
+			};
+			name = Debug;
+		};
+		08F2A2D51BEE66C400FB3CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MonicaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.MonicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monica.app/Monica";
+			};
+			name = Release;
+		};
+		08F2A2D71BEE66C400FB3CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MonicaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.MonicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Monica;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		08F2A2D81BEE66C400FB3CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MonicaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MingDai.MonicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Monica;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08F2A29E1BEE66C400FB3CFE /* Build configuration list for PBXProject "Monica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2A2CE1BEE66C400FB3CFE /* Debug */,
+				08F2A2CF1BEE66C400FB3CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F2A2D01BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "Monica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2A2D11BEE66C400FB3CFE /* Debug */,
+				08F2A2D21BEE66C400FB3CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F2A2D31BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "MonicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2A2D41BEE66C400FB3CFE /* Debug */,
+				08F2A2D51BEE66C400FB3CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F2A2D61BEE66C400FB3CFE /* Build configuration list for PBXNativeTarget "MonicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2A2D71BEE66C400FB3CFE /* Debug */,
+				08F2A2D81BEE66C400FB3CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08F2A29B1BEE66C400FB3CFE /* Project object */;
+}
